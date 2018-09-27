@@ -1,0 +1,9 @@
+rootProject.name = 'sports-schedule-api'
+include 'api'
+findProject(':api')?.name = 'sports-schedule-api'
+include 'common'
+include 'common'
+findProject(':common')?.name = 'sports-schedule-common'
+include 'data'
+findProject(':data')?.name = 'sports-schedule-data'
+

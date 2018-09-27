@@ -1,0 +1,20 @@
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+    baseName = 'sports-schedule-common'
+    version =  '0.0.1-SNAPSHOT'
+}
+
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind'
+    compile group: 'org.hibernate', name: 'hibernate-core'
+
+    runtime group: 'mysql', name: 'mysql-connector-java'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

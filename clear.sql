@@ -1,0 +1,9 @@
+USE sports_schedule;
+
+SET FOREIGN_KEY_CHECKS = 0;
+
+TRUNCATE game;
+TRUNCATE team;
+TRUNCATE venue;
+
+SET FOREIGN_KEY_CHECKS = 1;
